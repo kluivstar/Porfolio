@@ -2,7 +2,7 @@
 
 A personal portfolio website built with **Next.js 14** and **Tailwind CSS 4** to showcase my work, experience, and skills as a developer.  
 
-🚀 **Live Demo:** [Add your deployed link here]  
+🚀 **Live Demo:** [Pending]  
 
 ---
 
@@ -37,3 +37,5 @@ A personal portfolio website built with **Next.js 14** and **Tailwind CSS 4** to
 ├── tailwind.config.js  # Tailwind config
 ├── package.json
 └── README.md
+
+Inpsired by Lauren Waller.
