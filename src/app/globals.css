@@ -11,11 +11,12 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* now Tailwind recognizes font-orbitron */
+  /* Fonts */
+  --font-sans: var(--font-montserrat), sans-serif;
   --font-orbitron: var(--font-orbitron), sans-serif;
 }
 
-/* Dark mode colors */
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -27,4 +28,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif; /* 👈 sets Poppins as default */
 }
