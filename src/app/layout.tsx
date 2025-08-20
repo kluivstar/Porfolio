@@ -1,5 +1,6 @@
 import { Montserrat, Orbitron, Engagement } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
 
 // Default (Poppins)
 export const montserrat = Montserrat({
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={`${montserrat.variable} ${orbitron.variable} font-sans`}>
+        <Header />
         {children}
       </body>
     </html>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,20 +26,25 @@ export default function Home() {
 
         {/* Links */}
         <div className="text-left">
-            <ul className="px-10 text-[80px] font-bold font-sarina ">
-              {["About", "Work", "Contact"].map((item) => (
-                <li
+            <ul className="px-10 text-[78px] font-bold font-sarina ">
+              {["About", "Projects", "Contact"].map((item) => (
+              <li
                 key={item}
                 className="relative inline-block cursor-pointer 
-                           transition-transform duration-300 ease-out 
-                           hover:-translate-y-1 group"
+                          transition-transform duration-300 ease-out 
+                          hover:-translate-y-1 group"
               >
-                {item}
-
-                {/* underline effect */}
-                <span
-                  className="absolute left-0 -bottom-1 h-[3px] bg-white w-0 transition-all duration-300 ease-out group-hover:w-full"
-                />
+                <Link href={`/${item.toLowerCase()}`}>
+                  <span className="relative">
+                    {item}
+                    {/* underline effect */}
+                    <span
+                      className="absolute left-0 -bottom-1 h-[3px] bg-white w-0 
+                                transition-all duration-300 ease-out 
+                                group-hover:w-full"
+                    />
+                  </span>
+                </Link>
               </li>
               ))}
               
