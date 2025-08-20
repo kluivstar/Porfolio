@@ -1,4 +1,4 @@
-import { Montserrat, Orbitron } from "next/font/google";
+import { Montserrat, Orbitron, Engagement } from "next/font/google";
 import "./globals.css";
 
 // Default (Poppins)
@@ -23,6 +23,12 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
      <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sarina&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${montserrat.variable} ${orbitron.variable} font-sans`}>
         {children}
       </body>
