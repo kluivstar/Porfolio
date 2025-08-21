@@ -3,19 +3,20 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <main className='flex flex-row justify-between px-10 py-5'>
+    <main className='flex flex-row justify-between -mr-5 sm:-mr-0 px-10 py-5 sm:px-14 md:px-27 lg:px-27'>
         {/* Image */}
-        <div>
-            <h1 className='text-[14px] font-bold'>KK</h1>
+        <div className='flex'>
+            <h1 className='text-[11px] font-bold tracking-widest lg:text-[16px]'>KK</h1>
+            <span className="inline-block w-15 h-0.5 mt-2.5 bg-gray-500 mx-2 lg:mt-3.5"></span>
         </div>
-
+        
         {/* Links */}
         <div className="text-left">
-            <ul className="px-10 text-[14px] space-x-3.5">
+            <ul className="px-2 text-[11px] font-bold space-x-3.5 tracking-widest lg:text-[16px]">
                 {[
-                { label: "X", url: "https://x.com/kluivstar" },
-                { label: "LI", url: "https://www.linkedin.com/in/kasimu-kluivert" },
-                { label: "GH", url: "https://github.com/kluivstar" },
+                { label: "X.", url: "https://x.com/kluivstar" },
+                { label: "LI.", url: "https://www.linkedin.com/in/kasimu-kluivert" },
+                { label: "GH.", url: "https://github.com/kluivstar" },
                 ].map(({ label, url }) => (
                 <li
                     key={label}

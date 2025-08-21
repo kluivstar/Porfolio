@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 /* Theme variables */
 :root {
@@ -16,6 +20,16 @@
   /* Fonts */
   --font-sans: var(--font-montserrat), sans-serif;
   --font-orbitron: var(--font-orbitron), sans-serif;
+
+   --tracking-tightest: -0.075em;
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.35em; /* changed from 0.1em */
+  /* optional extra values with unique names */
+  --tracking-ultra: 0.1em;
 }
 
 /* Dark mode */
