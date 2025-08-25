@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <main className='flex flex-row justify-between -mr-5 sm:-mr-0 px-10 py-5 sm:px-14 md:px-27 lg:px-27'>
+    <main className='flex flex-row justify-between -mr-5 sm:-mr-0 px-10 py-5 sm:px-14 md:px-27 lg:px-27 xl:px-58'>
         {/* Image */}
         <div className='flex'>
             <h1 className='text-[11px] font-bold tracking-widest lg:text-[16px]'>KK</h1>
@@ -12,7 +12,7 @@ const Header = () => {
         
         {/* Links */}
         <div className="text-left">
-            <ul className="px-2 text-[11px] font-bold space-x-3.5 tracking-widest lg:text-[16px]">
+            <ul className="px-2 text-[11px] font-bold space-x-3.5 tracking-widest md:mr-6 lg:text-[16px]">
                 {[
                 { label: "X.", url: "https://x.com/kluivstar" },
                 { label: "LI.", url: "https://www.linkedin.com/in/kasimu-kluivert" },

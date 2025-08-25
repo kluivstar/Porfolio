@@ -27,7 +27,7 @@ export default function Home() {
         {/* Links */}
         <div className="text-left xl:w-[70%]">
             <ul className="px-10 text-[51.2px] max-sm:text-[62px] md:text-[115px] lg:text-[155px] 2xl:text-[285px] font-bold font-sarina">
-              {["About", "Projects", "Contact"].map((item) => (
+              {["Projects", "Work", "Contact"].map((item) => (
               <li
                 key={item}
                 className="relative inline-block cursor-pointer 
